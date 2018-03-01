@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyVoicePay</string>
+    <string name="start">Start</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+
+    <string name="speech_select_user">Whome you would like to pay?</string>
+    <string name="speech_multiple_users">There are different users found with name %1$s please choose specific %1$s</string>
+    <string name="speech_payment_success">%1$s successfully received payment %2$s</string>
+    <string name="speech_no_matches">Sorry no matches found for payment</string>
+    <string name="speech_payment_amount">How much amount in rupees you want to pay to %1$s</string>
+    <string name="txt_empty"> </string>
+
+
+</resources>

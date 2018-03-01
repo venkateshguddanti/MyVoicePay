@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="types"
+            type="com.hm.org.voicepay.models.User"/>
+    </data>
+ <android.support.v7.widget.CardView
+    android:id="@+id/cardview"
+    style="@style/MatchParentWrapContent"
+     android:elevation="3dp"
+     android:layout_margin="10dp"
+     >
+
+    <LinearLayout
+        style="@style/MatchParentWrapContent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/generic_margin">
+
+        <TextView
+            android:id="@+id/order_textview"
+            style="@style/WrapContent" />
+
+        <ImageView
+            android:id="@+id/avatar_imageview"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_marginStart="@dimen/generic_margin"
+            android:src="@android:mipmap/sym_def_app_icon"/>
+
+        <TextView
+            android:id="@+id/name_textview"
+            style="@style/FillRemainingWidthWrapContent"
+            android:layout_margin="@dimen/generic_margin"
+            android:textSize="20sp"
+            android:text="@{types.name}"/>
+
+        <TextView
+            android:id="@+id/score_textview"
+            style="@style/WrapContent"
+            android:layout_marginStart="@dimen/generic_margin" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+</layout>

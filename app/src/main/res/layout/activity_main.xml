@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchParent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        style="@style/FillRemainingWidthMatchParent"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/txt_assitance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:textSize="18sp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txt_assitance"
+            android:layout_alignParentBottom="true">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
